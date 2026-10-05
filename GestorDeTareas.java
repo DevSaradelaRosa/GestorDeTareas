@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class GestorDeTareas {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in); // me va a dejar mostrar lo que escribí
 
         int totalPrioridad = 0;
 
@@ -12,8 +12,10 @@ public class GestorDeTareas {
         System.out.println("3. Salir");
 
         System.out.println("Selecciona una opción: ");
-        int opcion = sc.nextInt();
+        int opcion = sc.nextInt(); //limpiar
         sc.nextLine();
+
+        // validamos que esté entre 1 y 3
 
         if (opcion >= 1 && opcion <= 3) {
 
@@ -25,9 +27,11 @@ public class GestorDeTareas {
                 System.out.print("Prioridad (1 a 5): ");
                 int prioridad = sc.nextInt();
 
+                // validación básica con operador lógico
                 boolean esValida = prioridad >= 1 && prioridad <= 5;
                 System.out.println("¿Prioridad válida? " + esValida);
 
+                // operación aritmética: suma de prioridades
                 totalPrioridad += prioridad;
 
                 System.out.println(
