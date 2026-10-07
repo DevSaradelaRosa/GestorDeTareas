@@ -2,7 +2,8 @@ import java.util.Scanner;
 
 public class GestorDeTareas {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in); // me va a dejar mostrar lo que escribí
+        Scanner sc = new Scanner(System.in); // me va a dejar acceder a los datos
+
 
         int totalPrioridad = 0;
 
